@@ -1,0 +1,115 @@
+badass = {
+    index = 122451
+	category = personality
+	opposites = {
+		pussy
+	}
+	diplomacy = 2
+    martial = 2
+	learning = -1
+	character_travel_safety_mult = 0.25
+	
+	attraction_opinion = 10
+	same_opinion = 10
+	parochial_opinion = 10
+	
+	culture_modifier = {
+		parameter = introverted_trait_bonuses
+		same_culture_opinion = 10
+		monthly_piety_gain_mult = 0.1
+	}
+	
+	ruler_designer_cost = -10
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_shy_desc
+			}
+			desc = trait_shy_character_desc
+		}
+	}
+
+	ai_boldness = low_negative_ai_value
+	ai_zeal = very_low_negative_ai_value
+	ai_vengefulness = very_low_negative_ai_value
+	ai_sociability = dominant_negative_ai_value
+	ai_amenity_target_baseline = -0.1
+
+	compatibility = {
+		shy = @pos_compat_low
+		content = @pos_compat_medium
+		calm = @pos_compat_high
+		craven = @pos_compat_low
+		chaste = @pos_compat_low
+		celibate = @pos_compat_low
+		eccentric = @pos_compat_medium
+		gregarious = @neg_compat_high
+		curious = @neg_compat_medium
+		wrathful = @neg_compat_medium
+		ambitious = @neg_compat_high
+		lustful = @neg_compat_medium
+	}
+}
+
+pussy = {
+    index = 122452
+	category = personality
+	opposites = {
+		badass
+	}
+	diplomacy = -2
+	learning = 1
+	hostile_scheme_resistance_mult = 0.2
+	personal_scheme_power_mult = -0.2
+	learn_language_scheme_power_mult = 0.3
+	character_travel_safety_mult = 0.25
+	
+	attraction_opinion = -5
+	same_opinion = 10
+	parochial_opinion = 10
+	
+	culture_modifier = {
+		parameter = introverted_trait_bonuses
+		same_culture_opinion = 10
+		monthly_piety_gain_mult = 0.1
+	}
+	
+	ruler_designer_cost = -10
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_shy_desc
+			}
+			desc = trait_shy_character_desc
+		}
+	}
+
+	ai_boldness = low_negative_ai_value
+	ai_zeal = very_low_negative_ai_value
+	ai_vengefulness = very_low_negative_ai_value
+	ai_sociability = dominant_negative_ai_value
+	ai_amenity_target_baseline = -0.1
+
+	compatibility = {
+		shy = @pos_compat_high
+		content = @pos_compat_low
+		calm = @pos_compat_low
+		craven = @pos_compat_high
+		chaste = @pos_compat_high
+		celibate = @pos_compat_high
+		eccentric = @pos_compat_medium
+		gregarious = @neg_compat_low
+		curious = @neg_compat_medium
+		wrathful = @neg_compat_low
+		ambitious = @neg_compat_low
+		lustful = @neg_compat_high
+	}
+}
